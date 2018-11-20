@@ -16,6 +16,7 @@ enum UserType {
 };
 
 class AbstractUser {
+    string email;
 public:
     hash<string> pass_hash;
     virtual bool authenticate(string username, string password) = 0;
